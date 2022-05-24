@@ -194,27 +194,29 @@ results.innerHTML+=`
         `
 
   }}
+
+
 // Définition du message en fonction de la valeur du solde
   let message = document.getElementById("message");
   function msg(){
-  if (solde > 15001){
-    message.innerHTML = "On est bien 💲💲💲"
+  if (solde >= 15000){
+    message.innerHTML = "Buenooo"
     message.style.color = "green" 
   }
   else if 
-    (solde <= 15000 && solde >= 10001  ){
-      message.innerHTML = "Hey reste cool !"
+    (solde <= 14999 && solde >= 5000  ){
+      message.innerHTML = "C'est ok"
       message.style.color = "#f1de2f"
     }
   else if 
-    (solde <= 10000 && solde >= 5001){
-      message.innerHTML = "tu t'es cru à Las Vegas ⚠️?!"
+    (solde <= 4999 && solde > 0){
+      message.innerHTML = "Molo stp"
       message.style.color = "orange"
   
     }
   else if 
-  (solde <= 5000 && solde >= 0  ){
-      message.innerHTML = "t'as carrément craqué ! ⚠️⚠️⚠️ "
+  (solde <= 0  ){
+      message.innerHTML = "💀"
       message.style.color = "red"
     }
   }
